@@ -15,7 +15,7 @@ body {
     background-color: rgba(218, 190, 222, 1);
 	background-image: url('tlo.png');
 	background-position: center;
-	background-size: contain;
+	background-size: cover; 
 	background-repeat: no-repeat;
     font-family: 'Lato', sans-serif;
 }
