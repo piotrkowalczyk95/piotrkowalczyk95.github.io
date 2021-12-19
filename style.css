@@ -13,6 +13,7 @@ body {
     width: 50%;
     margin: auto;
     background-color: rgba(218, 190, 222, 1);
+	background-image: url('tlo.png');
     font-family: 'Lato', sans-serif;
 }
 
