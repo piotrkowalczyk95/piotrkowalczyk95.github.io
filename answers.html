@@ -216,10 +216,10 @@
                 <label class="q-label">
                     Uzupełnij kod.</br>
                     <code>public static void spawnCreature() {</br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;int[] tab = {2, 4, 8, 16, 32, 64};</br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;int[] tab = {2, 4, 8, 16, 32, 64<p style="color:blue; display: inline;">};</p></br>
                         &nbsp;&nbsp;&nbsp;&nbsp;int randomNum = randomInt(6);</br>
                         &nbsp;&nbsp;&nbsp;&nbsp;Entity entityToSpawn;</br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;if(randomNum == 0){</br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;if<p style="color:blue; display: inline;">(</p>randomNum == 0<p style="color:blue; display: inline;">)</p>{</br>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;entityToSpawn = new CreeperEntity(EntityType.CREEPER, (World) world);</br>
                             &nbsp;&nbsp;&nbsp;&nbsp;}</br>
                             &nbsp;&nbsp;&nbsp;&nbsp;else if(radomNum == 1){</br>
@@ -232,10 +232,10 @@
                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;entityToSpawn = new SheepEntity(EntityType.SHEEP, (World) world);</br>
                                         &nbsp;&nbsp;&nbsp;&nbsp;}</br>
                     </br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;for (int index = 0; index < tab[randomNum]; index++) {</br></tab>
+                    &nbsp;&nbsp;&nbsp;&nbsp;for (int index = 0; index < tab[randomNum]; index++) <p style="color:blue; display: inline;">{</p></br></tab>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);</br>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;world.addEntity(entityToSpawn);</br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;}</br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<p style="color:blue; display: inline;">}</p></br>
                     }</br>
                 </code>
                 </label>
