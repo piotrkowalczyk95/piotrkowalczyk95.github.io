@@ -12,7 +12,7 @@ button {
 body {
     width: 50%;
     margin: auto;
-    background-image: url("/tlo.png");
+    background-image: url("tlo.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: 'Lato', sans-serif;
