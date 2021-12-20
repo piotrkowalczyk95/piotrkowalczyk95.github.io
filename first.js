@@ -7,7 +7,9 @@ function go() {
         alert("Przed rozpoczęciem testu, należy podać dane!")
     }
 }
-
+function showAnswers(){
+    window.location.href = '/answers.html';
+}
 function keyListener(event) {
     if (event.defaultPrevented) {
         return;
