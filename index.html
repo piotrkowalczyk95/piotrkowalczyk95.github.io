@@ -14,67 +14,241 @@
 
 <body>
     <form action="https://formspree.io/f/mrgjgzvo" method="POST">
-        <div class="background">
-            <img src="tlo.png"/>
-            <div id="pin" class="sticker">
-            </div>
-           </div>
         <div class="visible" id="first">
-            <label>Imię i nazwisko nauczyciela:</label>
-            <input id="teacher" class="f-text" type="text" placeholder="wpisz" name="nauczyciel">
-            <br>
-            <label>Twoje imię i nazwisko:</label>
-            <input id="student" class="f-text" type="text" placeholder="wpisz" name="uczen">
-            <button type="button" class="f-text" onclick="go()">Zaczynajmy!</button>
+            <label>Wpisz swoje imię i nazwisko:</label>
+            <input id="student" style="height: 120%" class="f-text" type="text" placeholder="wpisz" name="uczen">
+            <button style="margin-top: 5%" type="button" class="f-text" onclick="go()">Zaczynajmy!</button>
         </div>
         <span id="questions" class="hidden">
-        <div>
-            <h2>
-                Pytanie 1
-            </h2>
-            <label class="q-label">
-        Uzupełnij pętlę "dla" dla następującego warunku:</br>
-        <b>warunek:</b> index ma być mniejszy niż 7 </br>
-        <code>for(int index = 0;</code>
-        <input type="text" placeholder="wpisz odpowiedź"  name="pytanie1">
-        <code>; i++){</br>&nbsp;&nbsp;&nbsp;&nbsp;...</br>&nbsp;&nbsp;&nbsp;&nbsp;...</br>}</code>
-        </label></div>
-        </br>
-        <div>
-            <h2>
-                Pytanie 2
-            </h2>
-            <label class="q-label">
-        Uzupełnij instrukcję warunkową "jeśli":</br>
-        <input type="text" placeholder="wpisz odpowiedź"  name="pytanie2">
-        <code>(clicks < 4){</br>&nbsp;&nbsp;&nbsp;&nbsp;...</br>&nbsp;&nbsp;&nbsp;&nbsp;...</br>}</code>
-    </label></div>
-        </br>
-        <div>
-            <h2>
-                Pytanie 3
-            </h2>
-            <label class="q-label">
-        Przypisz zmiennej "x" wartość 123:</br>
-        <code>int x = 0;</code></br>
-        <input type="text" placeholder="wpisz odpowiedź"  name="pytanie3">
-    </label></div>
-        </br>
-        <div>
-            <h2>
-                Pytanie 4
-            </h2>
-            <label class="q-label">
-            Uzupełnij instrukcję warunkową "jeśli" sprawdzeniem, czy zmienna "i" jest równa 17:</br>
-        <code>if(</code>
-        <input type="text" placeholder="wpisz odpowiedź"  name="pytanie4">
-        <code>){</br>&nbsp;&nbsp;&nbsp;&nbsp;...</br>&nbsp;&nbsp;&nbsp;&nbsp;...</br>}</code>
-    </label></div>
-        </br>
-        </br>
-        </br>
-        <button type="submit">ZAPISZ!</button>
-    </span>
+            <div class="question">
+                <h2>
+                    Pytanie 1
+                </h2>
+                <label class="q-label">
+                Uzupełnij pętlę "dla" dla następującego warunku:</br>
+                <b>warunek:</b> index ma być mniejszy niż 7 </br>
+                <code>for(int index = 0;</code>
+                <input type="text" placeholder="wpisz odpowiedź"  name="pytanie1">
+                <code>; i++){</br>&nbsp;&nbsp;&nbsp;&nbsp;...</br>&nbsp;&nbsp;&nbsp;&nbsp;...</br>}</code>
+                </label>
+            </div>
+            <div class="question">
+                <h2>
+                    Pytanie 2
+                </h2>
+                <label class="q-label">
+                Uzupełnij instrukcję warunkową "jeśli":
+                </br>
+                <input type="text" placeholder="wpisz odpowiedź"  name="pytanie2">
+                <code>(clicks < 4){</br>&nbsp;&nbsp;&nbsp;&nbsp;...</br>&nbsp;&nbsp;&nbsp;&nbsp;...</br>}</code>
+                </label>
+            </div>
+            <div class="question">
+                <h2>
+                    Pytanie 3
+                </h2>
+                <label class="q-label">
+                Przypisz zmiennej "x" wartość 123:</br>
+                <code>int x = 0;</code></br>
+                <input type="text" placeholder="wpisz odpowiedź"  name="pytanie3">
+                </label></div>
+            <div class="question">
+                <h2>
+                    Pytanie 4
+                </h2>
+                <label class="q-label">
+                Uzupełnij instrukcję warunkową "jeśli" sprawdzeniem, czy zmienna "i" jest równa 17:</br>
+                <code>if(</code>
+                <input type="text" placeholder="wpisz odpowiedź"  name="pytanie4">
+                <code>){</br>&nbsp;&nbsp;&nbsp;&nbsp;...</br>&nbsp;&nbsp;&nbsp;&nbsp;...</br>}</code>
+                </label>
+            </div>
+            <div class="question">
+                <h2>
+                    Pytanie 5
+                </h2>
+                <label class="q-label">
+                    Co musimy wpisać przed nazwą tablicy, żeby była to tablica danych typu int?</br>
+                <input type="text" placeholder="wpisz odpowiedź"  name="pytanie5">
+                </label>
+            </div>
+            <div class="question">
+                <h2>
+                    Pytanie 6
+                </h2>
+                <label class="q-label">
+                    Jak wywołać metodę, która została utworzona w podanej linii (napisz całą linijkę): public static void metoda(){}</br>
+                <input type="text" placeholder="wpisz odpowiedź"  name="pytanie6">
+                </label>
+            </div>
+            <div class="question">
+                <h2>
+                    Pytanie 7
+                </h2>
+                <label class="q-label">
+                    Jakie nawiasy oznaczają początek i koniec np. pętli, instrukcji warunkowej lub metody? Wpisz odpowiednie znaki.</br>
+                <input type="text" placeholder="wpisz odpowiedź"  name="pytanie7">
+                </label>
+            </div>
+            <div class="question">
+                <h2>
+                    Pytanie 8
+                </h2>
+                <label class="q-label">
+                    Czy w jednej metodzie mogą być dwie zmienne o takiej samej nazwie? (Tak/Nie)</br>
+                <input type="text" placeholder="wpisz odpowiedź"  name="pytanie8">
+                </label>
+            </div>
+            <div class="question">
+                <h2>
+                    Pytanie 9
+                </h2>
+                <label class="q-label">
+                    Co oznacza x++? Rozpisz to jako działanie matematyczne.</br>
+                <input type="text" placeholder="wpisz odpowiedź"  name="pytanie9">
+                </label>
+            </div>
+            <div class="question">
+                <h2>
+                    Pytanie 10
+                </h2>
+                <label class="q-label">
+                    Co wpiszemy przed nazwą zmiennej, żeby stworzyć zmienną, która jest liczbą całkowitą?</br>
+                <input type="text" placeholder="wpisz odpowiedź"  name="pytanie10">
+                </label>
+            </div>
+            <div class="question">
+                <h2>
+                    Pytanie 11
+                </h2>
+                <label class="q-label">
+                    Jak dodać komentarz? Wstaw odpowiedni symbol/symbole.</br>
+                <input type="text" placeholder="wpisz odpowiedź"  name="pytanie11">
+                </label>
+            </div>
+            <div class="question">
+                <h2>
+                    Pytanie 12
+                </h2>
+                <label class="q-label">
+                    Jakie dwa słowa kluczowe musimy wpisać przed typem metody, gdy ją tworzymy?</br>
+                <input type="text" placeholder="wpisz odpowiedź"  name="pytanie12">
+                </label>
+            </div>
+            <div class="question">
+                <h2>
+                    Pytanie 13
+                </h2>
+                <label class="q-label">
+                    Mamy tablicę 
+                    <code>int[] tab = {4, 8, 15, 16, 23, 42};</code> Jeżeli bierzemy element tab[4] to jaką wartość otrzymamy?</br>
+                <input type="text" placeholder="wpisz odpowiedź"  name="pytanie13">
+                </label>
+            </div>
+            <div class="question">
+                <h2>
+                    Pytanie 14
+                </h2>
+                <label class="q-label">
+                    Uzupełnij kod, tak żeby sprawdzić czy zmienna x jest równa 20. </br>
+                <code>if(</code>
+                <input type="text" placeholder="wpisz odpowiedź"  name="pytanie14">
+                <code> 20){}</code>
+                </label>
+            </div>
+            <div class="question">
+                <h2>
+                    Pytanie 15
+                </h2>
+                <label class="q-label">
+                    Mamy metodę</br> 
+                    <code>public static double liczba(){</br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;int a = 17; </br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;double b = 2.5;</br> 
+                        &nbsp;&nbsp;&nbsp;&nbsp;float c = 1.4;</br> 
+                        &nbsp;&nbsp;&nbsp;&nbsp;int d = 4;</br> 
+                        &nbsp;&nbsp;&nbsp;&nbsp;return</code>
+                        
+                        <code>;</br>
+                        }
+                    </code></br> 
+                    Wpisz w pole zmienną, którą powinniśmy zwrócić.
+                </label>
+            </div>
+            <div class="question">
+                <h2>
+                    Pytanie 16
+                </h2>
+                <label class="q-label">
+                    Jaka liczba powinna być przy <code>Math.random() * </code> jeśli chcemy otrzymać 5 możliwych wyników losowania?
+                    <input type="text" placeholder="wpisz odpowiedź"  name="pytanie16">
+                </label>
+            </div>
+            <div class="question">
+                <h2>
+                    Pytanie 17
+                </h2>
+                <label class="q-label">
+                    Dopisz typ do podanych zmiennych.</br>
+                    <input class="width-4" type="text" placeholder="wpisz odpowiedź"  name="pytanie17a">
+                    <code> x = 5;</code></br>
+                    <input class="width-2" type="text" placeholder="wpisz odpowiedź"  name="pytanie17b">
+                    <code> y = 2.2;</code></br>
+                    <input class="width-1" type="text" placeholder="wpisz odpowiedź"  name="pytanie17c">
+                    <code> z = {5, 2, 11, 4};</code></br>
+                </label>
+            </div>
+            <div class="question">
+                <h2>
+                    Pytanie 18
+                </h2>
+                <label class="q-label">
+                    Napisz pierwszą linijkę metody typu void o nazwie metoda, która przyjmuje argument, który jest liczbą całkowitą o nazwie liczba.</br>
+                    <input type="text" placeholder="wpisz odpowiedź"  name="pytanie18">
+                </label>
+            </div>
+            <div class="question">
+                <h2>
+                    Pytanie 19
+                </h2>
+                <label class="q-label">
+                    Jaka metoda służy do losowania liczby?</br>
+                    <input type="text" placeholder="wpisz odpowiedź"  name="pytanie19">
+                </label>
+            </div>
+            <div class="question">
+                <h2>
+                    Pytanie 20
+                </h2>
+                <label class="q-label">
+                    Uzupełnij kod.</br>
+                    <code>public static void spawnCreature() {</br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;int[] tab = {2, 4, 8, 16, 32, 64};</br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;int randomNum = randomInt(6);</br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Entity entityToSpawn;</br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;if(randomNum == 0){</br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;entityToSpawn = new CreeperEntity(EntityType.CREEPER, (World) world);</br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;}</br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;else if(radomNum == 1){</br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;entityToSpawn = new SkeletonEntity(EntityType.SKELETON, (World) world);</br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;}</br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;else if(randomNum == 2){</br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;entityToSpawn = new ZombieEntity(EntityType.ZOMBIE, (World) world);</br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;}</br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;else{</br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;entityToSpawn = new SheepEntity(EntityType.SHEEP, (World) world);</br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;}</br>
+                    </br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;for (int index = 0; index < tab[randomNum]; index++) {</br></tab>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);</br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;world.addEntity(entityToSpawn);</br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;}</br>
+                    }</br>
+                </code>
+                </label>
+            </div>
+            <button class="save" type="submit">ZAPISZ!</button>
+        </span>
     </form>
     <script src="/first.js"></script>
 </body>
