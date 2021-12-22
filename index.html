@@ -14,7 +14,10 @@
 </header>
 
 <body>
-    <form action="https://formspree.io/f/mrgjgzvo" method="POST" target="https://formspree.io/f/mrgjgzvo">
+    <!-- https://formspree.io/f/mrgjgzvo -->
+    <span id="link" style="display:none" value="https://formspree.io/f/mrgjgzvo">
+        https://formspree.io/f/mrgjgzvo</span>
+    <form action="https://formspree.io/f/mrgjgzvo" method="POST" target="_blank" id="testForm">
         <div class="visible" id="first">
             <label>Wpisz swoje imię i nazwisko:</label>
             <input id="student" style="height: 120%" class="f-text" type="text" placeholder="wpisz" name="uczen">
@@ -267,7 +270,7 @@
                 </code>
                 </label>
             </div>
-            <button class="save" type="submit" onclick="showAnswers()">ZAPISZ!</button>
+            <button class="save" type="button" onclick="showAnswers()">ZAPISZ!</button>
         </span>
     </form>
     <script src="/first.js"></script>

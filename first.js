@@ -7,8 +7,11 @@ function go() {
         alert("Przed rozpoczęciem testu, należy podać dane!")
     }
 }
-function showAnswers(){
-    console.log("post");
+function showAnswers(link){
+    // console.log(link);
+    //console.log(document.getElementById("link").innerText);
+    //window.open(document.getElementById("link").innerText, '_blank');
+    document.getElementById("testForm").submit();
     window.location.href = '/answers.html';
 }
 function keyListener(event) {
