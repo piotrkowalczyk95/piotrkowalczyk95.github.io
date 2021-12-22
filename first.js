@@ -8,6 +8,7 @@ function go() {
     }
 }
 function showAnswers(){
+    console.log("post");
     window.location.href = '/answers.html';
 }
 function keyListener(event) {
