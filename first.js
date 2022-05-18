@@ -16,16 +16,19 @@ function showAnswers(link){
 }
 
 function showAnswersQ2(link){
-    copyElement();
+    copyToClipboard();
     document.getElementById("testForm").submit();
     window.location.href = '/answersQ2.html';
 }
 
-function copyElement(copyFrom, whereToCopy) {
-    if(document.formName.copy.checked){
-        document.formName.elements[whereToCopy].value = copyFrom.value;
-    }
-}
+function copyToClipboard(text) {
+    const elem = document.createElement('textarea');
+    elem.value = text;
+    document.body.appendChild(elem);
+    elem.select();
+    document.execCommand('copy');
+    document.body.removeChild(elem);
+ }
 
 
 function keyListener(event) {
