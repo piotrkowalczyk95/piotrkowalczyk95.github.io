@@ -16,6 +16,7 @@ function showAnswers(link){
 }
 
 function showAnswersQ2(link){
+    copyToClipboard();
     document.getElementById("testForm").submit();
     window.location.href = '/answersQ2.html';
 }
