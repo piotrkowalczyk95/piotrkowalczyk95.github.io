@@ -238,7 +238,7 @@
                 </h2>
                 <label class="q-label">
                     Które warunki z poniższego stwierdzenia muszą być spełnione żeby można było pograć w minecrafta?</br>
-                    <code>Mogę pograć w minecrafta, gdy <b>(warunek 1)</b> posprzątam pokój <b><i>lub</i> (warunek 2)</b> odrobię lekcje.</code>
+                    <code>Mogę pograć w minecrafta, gdy <i>(warunek 1)</i> posprzątam pokój lub <i>(warunek 2)</i> odrobię lekcje.</code>
                 <form class="width-2" type="text">
                         <p>
                             <input type="radio" name="pytanie12" value="warunek 1" />
@@ -249,7 +249,7 @@
                             warunek 2
                         </p>
                         <p>
-                            <input type="radio" name="pytanie12" value="oba warunki" />
+                            <input type="radio" name="pytanie12" value="dowolny warunek" />
                             dowolny warunek
                         </p>
                         <p>
@@ -265,7 +265,7 @@
                 </h2>
                 <label class="width-1" class="q-label">
                     Który z poniższych warunków musi zwrócić <i>prawdę</i> żeby instrukcja warukowa została wykonana przez program? 
-                    <code>if (x > 0 && z != Blocks.AIR) { ... }</code>
+                    <code>if (x > 0 &#x26;&#x26; z != Blocks.AIR) { ... }</code>
                     <form class="width-4" type="text">
                         <p>
                             <input type="radio" name="pytanie13" value="warunek 1" />
@@ -277,7 +277,7 @@
                         </p>
                         <p>
                             <input type="radio" name="pytanie13" value="oba warunki" />
-                            x > 0 lub z != Blocks.AIR
+                            oba warunki
                         </p>
                         <p>
                             <input type="radio" name="pytanie13" value="żaden warunek" />
@@ -291,10 +291,25 @@
                     Pytanie 14
                 </h2>
                 <label class="q-label">
-                    Co  </br>
-                <code>if(</code>
-                <input class="width-2" type="text" placeholder="wpisz odpowiedź"  name="pytanie14">
-                <code> 20){}</code>
+                    Co wpiszemy, żeby wywołać siódmy element z tablicy o nazwie tab?</br>
+                    <form class="width-4" type="text">
+                        <p>
+                            <input type="radio" name="pytanie14" value="tab[6]" />
+                            tab[6]
+                        </p>
+                        <p>
+                            <input type="radio" name="pytanie14" value="tab[7]" />
+                            tab[7]
+                        </p>
+                        <p>
+                            <input type="radio" name="pytanie14" value="tab(6)" />
+                            tab(6)
+                        </p>
+                        <p>
+                            <input type="radio" name="pytanie14" value="tab.6" />
+                            tab.6
+                        </p>
+                    </form>
                 </label>
             </div>
             <div class="question">
@@ -302,18 +317,8 @@
                     Pytanie 15
                 </h2>
                 <label class="q-label">
-                    Mamy metodę</br> 
-                    <code>public static double liczba(){</br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;int a = 17; </br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;double b = 2.5;</br> 
-                        &nbsp;&nbsp;&nbsp;&nbsp;float c = 1.4;</br> 
-                        &nbsp;&nbsp;&nbsp;&nbsp;int d = 4;</br> 
-                        &nbsp;&nbsp;&nbsp;&nbsp;return</code>
-                        <input class="width-1" type="text" placeholder="wpisz"  name="pytanie15">
-                        <code>;</br>
-                        }
-                    </code></br> 
-                    Wpisz w pole zmienną, którą powinniśmy zwrócić.
+                    Jakiego słowa używamy, żeby zwrócić wartość z metody?</br> 
+                        <input class="width-2" type="text" placeholder="wpisz odpowiedź"  name="pytanie15">
                 </label>
             </div>
             <div class="question">
@@ -321,8 +326,10 @@
                     Pytanie 16
                 </h2>
                 <label class="q-label">
-                    Jaka liczba powinna być przy mnożeniu <code>Math.random() * </code> jeśli chcemy otrzymać 5 możliwych wyników losowania?</br>
-                    <input class="width-1" type="text" placeholder="wpisz"  name="pytanie16">
+                    Mamy metodę o poniższej definicji:</br>
+                    <code>public static int sum(){}</code></br>
+                    Jaki typ zwróci powyższa metoda?
+                    <input class="width-2" type="text" placeholder="wpisz odpowiedź"  name="pytanie16">
                 </label>
             </div>
             <div class="question">
@@ -330,13 +337,8 @@
                     Pytanie 17
                 </h2>
                 <label class="q-label">
-                    Dopisz typ do podanych zmiennych.</br>
-                    <input class="width-1" type="text" placeholder="wpisz"  name="pytanie17a">
-                    <code> x = 5;</code></br>
-                    <input class="width-1" type="text" placeholder="wpisz"  name="pytanie17b">
-                    <code> y = 2.2;</code></br>
-                    <input class="width-1" type="text" placeholder="wpisz"  name="pytanie17c">
-                    <code> z = {5, 2, 11, 4};</code></br>
+                    Jak nazywa się znak, którym kończymy większość linijek w kodzie?</br>
+                    <input class="width-2" type="text" placeholder="wpisz odpowiedź"  name="pytanie17">
                 </label>
             </div>
             <div class="question">
@@ -344,8 +346,17 @@
                     Pytanie 18
                 </h2>
                 <label class="q-label">
-                    Napisz pierwszą linijkę metody typu void o nazwie metoda, która przyjmuje argument, który jest liczbą całkowitą o nazwie liczba.</br>
-                    <input class="width-4" type="text" placeholder="wpisz odpowiedź"  name="pytanie18">
+                    Czy kolejność podawania argumentów w metodzie ma znaczenie?</br>
+                    <form class="width-4" type="text">
+                        <p>
+                            <input type="radio" name="pytanie18" value="tak" />
+                            tak
+                        </p>
+                        <p>
+                            <input type="radio" name="pytanie19" value="nie" />
+                            nie
+                        </p>
+                    </form>
                 </label>
             </div>
             <div class="question">
@@ -353,8 +364,27 @@
                     Pytanie 19
                 </h2>
                 <label class="q-label">
-                    Jaka metoda służy do losowania liczby?</br>
-                    <input class="width-2" type="text" placeholder="wpisz odpowiedź"  name="pytanie19">
+                    Mamy pętlę o następującej definicji:</br>
+                    <code>for(int i = 0; i < 100; i += 3){}</code></br>
+                    Jaką wartość będzie miała zmienna <b>i</b> po 3 przejściach pętli?</br>
+                    <form class="width-4" type="text">
+                        <p>
+                            <input type="radio" name="pytanie19" value="3" />
+                            3
+                        </p>
+                        <p>
+                            <input type="radio" name="pytanie19" value="12" />
+                            12
+                        </p>
+                        <p>
+                            <input type="radio" name="pytanie19" value="9" />
+                            9
+                        </p>
+                        <p>
+                            <input type="radio" name="pytanie19" value="6" />
+                            6
+                        </p>
+                    </form>
                 </label>
             </div>
             <div class="question">
@@ -362,34 +392,28 @@
                     Pytanie 20
                 </h2>
                 <label class="q-label">
-                    Uzupełnij kod brakującymi symbolami.</br>
-                    <code>public static void spawnCreature() {</br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;int[] tab = {2, 4, 8, 16, 32, 64<input class="width-1" type="text" placeholder="wpisz"  name="pytanie20a"></br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;int randomNum = randomInt(6);</br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;Entity entityToSpawn;</br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;if<input class="width-1" class="width-1" type="text" placeholder="wpisz"  name="pytanie20b">randomNum == 0
-                        <input class="width-1" type="text" placeholder="wpisz"  name="pytanie20c">{</br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;entityToSpawn = new CreeperEntity(EntityType.CREEPER, (World) world);</br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;}</br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;else if(randomNum == 1){</br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;entityToSpawn = new SkeletonEntity(EntityType.SKELETON, (World) world);</br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;}</br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;else if(randomNum == 2){</br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;entityToSpawn = new ZombieEntity(EntityType.ZOMBIE, (World) world);</br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;}</br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;else{</br>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;entityToSpawn = new SheepEntity(EntityType.SHEEP, (World) world);</br>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;}</br>
-                    </br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;for (int index = 0; index < tab[randomNum]; index++) <input class="width-1" type="text" placeholder="wpisz"  name="pytanie20d"></br></tab>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);</br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;world.addEntity(entityToSpawn);</br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;<input class="width-1" type="text" placeholder="wpisz"  name="pytanie20e"></br>
-                    }</br>
-                </code>
+                    Co daje działanie modulo?</br>
+                    <form class="width-4" type="text">
+                        <p>
+                            <input type="radio" name="pytanie20" value="procent liczby" />
+                            procent liczby
+                        </p>
+                        <p>
+                            <input type="radio" name="pytanie20" value="resztę z dzielenia" />
+                            resztę z dzielenia
+                        </p>
+                        <p>
+                            <input type="radio" name="pytanie20" value="wynik dzielenia liczb" />
+                            wynik dzielenia liczb
+                        </p>
+                        <p>
+                            <input type="radio" name="pytanie20" value="ile razy pierwsza liczba mieści się w drugiej" />
+                            ile razy pierwsza liczba mieści się w drugiej
+                        </p>
+                    </form>
                 </label>
             </div>
-            <button class="save" type="button" onclick="showAnswers()">ZAPISZ!</button>
+            <button class="save" type="button" onclick="showAnswersQ2()">ZAPISZ!</button>
         </span>
     </form>
     <script src="/first.js"></script>

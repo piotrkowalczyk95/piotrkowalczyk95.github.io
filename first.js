@@ -14,6 +14,22 @@ function showAnswers(link){
     document.getElementById("testForm").submit();
     window.location.href = '/answers.html';
 }
+
+function showAnswersQ2(link){
+    document.getElementById("testForm").submit();
+    window.location.href = '/answersQ2.html';
+}
+
+function copyToClipboard() {
+    let temp = document.createElement('textarea');
+    temp.value = copyids.ids[0].id;
+    document.body.appendChild(temp);
+    temp.select();
+    document.execCommand('copy');
+    document.body.removeChild(temp);
+}
+
+
 function keyListener(event) {
     if (event.defaultPrevented) {
         return;
