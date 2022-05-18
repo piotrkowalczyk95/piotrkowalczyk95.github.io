@@ -1,12 +1,12 @@
-$("#testForm").submit(function(event) {
-    //alert("Hello");
-    var text = JSON.stringify($(this.form).serializeArray());
+$("#button").on("click", function(event) {
+    var serialized = $(this.form).serializeArray()
+    var text = serialized.map(function(field) {
+      return field.name+": "+field.value
+    }).join("\n")
   
-    $("#testForm").show().val(text)[0].select();
+    $("#copy").show().val(text)[0].select();
     document.execCommand("copy");
-    $("#testForm").hide();
-    alert("Copied the form: " + text);
-  
-    return false
+    $("#copy").hide();
+    alert("Odpowiedzi skopiowane!");
   
   })

@@ -15,7 +15,7 @@
 
 <body>
     <!-- https://formspree.io/f/mrgjgzvo -->
-    <form id="testForm" method="POST" action="/answersQ2.html">
+    <form id="testForm" action="/answersQ2.html">
         <div class="visible" id="first">
             <label>Wpisz swoje imię i nazwisko:</label>
             <input id="student" style="height: 120%" class="f-text" type="text" placeholder="wpisz" name="uczen">
@@ -24,10 +24,10 @@
         <span id="questions" class="hidden">
             <div class="question">
                 <h2>
-                    UWAGA
+                    QUIZ 2
                 </h2>
                 <label class="q-label">
-                <b>Przesyłamy odpowiedzi jedynie raz!</b></br>
+                <b>Witaj na drugim quizie z programowania. Trzymamy za Ciebie kciuki!</b></br>
                 Pamiętaj, że test nie jest oceniany, a służy jedynie omówieniu i przypomnieniu sobie pewnych informacji. Wypełnij go na spokojnie.
                 Możesz także korzystać z materiałów z zajęć.</br>
                 <b>POWODZENIA!</b>
@@ -39,7 +39,7 @@
                 </h2>
                 <label class="q-label">
                 Jakim słowem rozpoczynamy pętlę?
-                <form class="width-2" type="text">
+                <fieldset class="width-2" type="text" name="pytanie1">
                     <p>
                         <input type="radio" name="pytanie1" value="int" />
                         int
@@ -56,7 +56,7 @@
                         <input type="radio" name="pytanie1" value="if" />
                         if
                     </p>
-                </form>
+                </fieldset>
                 </label>
             </div>
             <div class="question">
@@ -65,7 +65,7 @@
                 </h2>
                 <label class="q-label">
                 Jakim słowem rozpoczynamy instrukcję warunkową?
-                <form class="width-2" type="text">
+                <fieldset class="width-2" type="text" name="pytanie2">
                     <p>
                         <input type="radio" name="pytanie2" value="double" />
                         double
@@ -82,7 +82,7 @@
                         <input type="radio" name="pytanie2" value="tab" />
                         tab
                     </p>
-                </form>
+                </fieldset>
                 </label>
             </div>
             <div class="question">
@@ -101,7 +101,7 @@
                 </h2>
                 <label class="q-label">
                 Napisz linijkę rozpoczynającą metodę o nazwie "getBlock", która ma zwracać typ "Block".</br>
-                <input class="width-2" type="text" placeholder="wpisz odpowiedź"  name="pytanie4">
+                <input class="width-4" type="text" placeholder="wpisz odpowiedź"  name="pytanie4">
                 </label>
             </div>
             <div class="question">
@@ -123,7 +123,7 @@
                 Zdefiniowana jest poniższa metoda:</br>
                 <code>public static void testMethod(int value){}</code></br>
                 Czy można użyć zmiennej value w kodzie tej metody?
-                <form class="width-2" type="text">
+                <fieldset class="width-2" type="text" name="pytanie6">
                     <p>
                         <input type="radio" name="pytanie6" value="tak" />
                         tak
@@ -132,7 +132,7 @@
                         <input type="radio" name="pytanie6" value="nie" />
                         nie
                     </p>
-                </form>
+                </fieldset>
                 </label>
             </div>
             <div class="question">
@@ -147,7 +147,7 @@
                 value = 1;
                 </code></br>
                 Czy powyższy kod wykona się prawidłowo?
-                <form class="width-2" type="text">
+                <fieldset class="width-2" type="text" name="pytanie7">
                     <p>
                         <input type="radio" name="pytanie7" value="tak" />
                         tak
@@ -156,7 +156,7 @@
                         <input type="radio" name="pytanie7" value="nie" />
                         nie
                     </p>
-                </form>
+                </fieldset>
                 </label>
             </div>
             <div class="question">
@@ -175,7 +175,7 @@
                 </h2>
                 <label class="q-label">
                     Co musimy wpisać przed nazwą tablicy, żeby była to tablica danych typu double?</br>
-                    <form class="width-2" type="text">
+                    <fieldset class="width-2" type="text" name="pytanie9">
                         <p>
                             <input type="radio" name="pytanie9" value="tab[]" />
                             tab[]
@@ -192,7 +192,7 @@
                             <input type="radio" name="pytanie9" value="double" />
                             double
                         </p>
-                    </form>
+                    </fieldset>
                 </label>
             </div>
             <div class="question">
@@ -212,7 +212,7 @@
                 </h2>
                 <label class="q-label">
                     Który z poniższy NIE sprawi, że do zmiennej x zostanie dodana wartość 1.</br>
-                    <form class="width-2" type="text">
+                    <fieldset class="width-2" type="text" name="pytanie11">
                         <p>
                             <input type="radio" name="pytanie11" value="tab[]" />
                             x++;
@@ -229,7 +229,7 @@
                             <input type="radio" name="pytanie11" value="double" />
                             x + 1;
                         </p>
-                    </form>
+                    </fieldset>
                 </label>
             </div>
             <div class="question">
@@ -239,7 +239,7 @@
                 <label class="q-label">
                     Które warunki z poniższego stwierdzenia muszą być spełnione żeby można było pograć w minecrafta?</br>
                     <code>Mogę pograć w minecrafta, gdy <i>(warunek 1)</i> posprzątam pokój lub <i>(warunek 2)</i> odrobię lekcje.</code>
-                <form class="width-2" type="text">
+                <fieldset class="width-2" type="text" name="pytanie12"> 
                         <p>
                             <input type="radio" name="pytanie12" value="warunek 1" />
                             warunek 1
@@ -256,7 +256,7 @@
                             <input type="radio" name="pytanie12" value="żaden warunek" />
                             żaden z warunków
                         </p>
-                    </form>
+                    </fieldset>
                 </label>
             </div>
             <div class="question">
@@ -266,7 +266,7 @@
                 <label class="width-1" class="q-label">
                     Który z poniższych warunków musi zwrócić <i>prawdę</i> żeby instrukcja warukowa została wykonana przez program? 
                     <code>if (x > 0 &#x26;&#x26; z != Blocks.AIR) { ... }</code>
-                    <form class="width-4" type="text">
+                    <fieldset class="width-4" type="text" name="pytanie13">
                         <p>
                             <input type="radio" name="pytanie13" value="warunek 1" />
                             x > 0
@@ -283,7 +283,7 @@
                             <input type="radio" name="pytanie13" value="żaden warunek" />
                             żaden z warunków
                         </p>
-                    </form>
+                    </fieldset>
                 </label>
             </div>
             <div class="question">
@@ -292,7 +292,7 @@
                 </h2>
                 <label class="q-label">
                     Co wpiszemy, żeby wywołać siódmy element z tablicy o nazwie tab?</br>
-                    <form class="width-4" type="text">
+                    <fieldset class="width-4" type="text" name="pytanie14">
                         <p>
                             <input type="radio" name="pytanie14" value="tab[6]" />
                             tab[6]
@@ -309,7 +309,7 @@
                             <input type="radio" name="pytanie14" value="tab.6" />
                             tab.6
                         </p>
-                    </form>
+                    </fieldset>
                 </label>
             </div>
             <div class="question">
@@ -328,7 +328,7 @@
                 <label class="q-label">
                     Mamy metodę o poniższej definicji:</br>
                     <code>public static int sum(){}</code></br>
-                    Jaki typ zwróci powyższa metoda?
+                    Jaki typ zwróci powyższa metoda?</br>
                     <input class="width-2" type="text" placeholder="wpisz odpowiedź"  name="pytanie16">
                 </label>
             </div>
@@ -347,7 +347,7 @@
                 </h2>
                 <label class="q-label">
                     Czy kolejność podawania argumentów w metodzie ma znaczenie?</br>
-                    <form class="width-4" type="text">
+                    <fieldset class="width-4" type="text" name="pytanie18">
                         <p>
                             <input type="radio" name="pytanie18" value="tak" />
                             tak
@@ -356,7 +356,7 @@
                             <input type="radio" name="pytanie19" value="nie" />
                             nie
                         </p>
-                    </form>
+                    </fieldset>
                 </label>
             </div>
             <div class="question">
@@ -367,7 +367,7 @@
                     Mamy pętlę o następującej definicji:</br>
                     <code>for(int i = 0; i < 100; i += 3){}</code></br>
                     Jaką wartość będzie miała zmienna <b>i</b> po 3 przejściach pętli?</br>
-                    <form class="width-4" type="text">
+                    <fieldset class="width-4" type="text" name="pytanie19">
                         <p>
                             <input type="radio" name="pytanie19" value="3" />
                             3
@@ -384,7 +384,7 @@
                             <input type="radio" name="pytanie19" value="6" />
                             6
                         </p>
-                    </form>
+                    </fieldset>
                 </label>
             </div>
             <div class="question">
@@ -393,7 +393,7 @@
                 </h2>
                 <label class="q-label">
                     Co daje działanie modulo?</br>
-                    <form class="width-4" type="text">
+                    <fieldset class="width-4" type="text" name="pytanie20">
                         <p>
                             <input type="radio" name="pytanie20" value="procent liczby" />
                             procent liczby
@@ -410,12 +410,13 @@
                             <input type="radio" name="pytanie20" value="ile razy pierwsza liczba mieści się w drugiej" />
                             ile razy pierwsza liczba mieści się w drugiej
                         </p>
-                    </form>
+                    </fieldset>
                 </label>
             </div>
-            <button class="save" type="submit" id="submit">ZAPISZ!</button>
+            <button class="save" type="submit" id="button">ZAPISZ!</button>
         </span>
     </form>
+    <textarea id=copy></textarea>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
     <script src="/first.js"></script>

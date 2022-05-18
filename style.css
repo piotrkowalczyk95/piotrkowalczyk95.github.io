@@ -37,6 +37,10 @@ body {
     width: 65%;
 }
 
+#copy{
+    display: none;
+}
+
 
 .question{
     border: solid 2px RGBA(0, 0, 0, 0.5);
