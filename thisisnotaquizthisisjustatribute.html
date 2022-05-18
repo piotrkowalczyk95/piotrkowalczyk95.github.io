@@ -38,11 +38,25 @@
                     Pytanie 1
                 </h2>
                 <label class="q-label">
-                Uzupełnij pętlę "dla" dla następującego warunku:</br>
-                <b>warunek:</b> index ma być mniejszy niż 7 </br>
-                <code>for(int index = 0;</code>
-                <input class="width-2" type="text" placeholder="wpisz odpowiedź"  name="pytanie1">
-                <code>; index++){</br>&nbsp;&nbsp;&nbsp;&nbsp;...</br>&nbsp;&nbsp;&nbsp;&nbsp;...</br>}</code>
+                Jakim słowem rozpoczynamy pętlę?
+                <form class="width-2" type="text">
+                    <p>
+                        <input type="radio" name="pytanie1" value="int" />
+                        int
+                    </p>
+                    <p>
+                        <input type="radio" name="pytanie1" value="for" />
+                        for
+                    </p>
+                    <p>
+                        <input type="radio" name="pytanie1" value="public" />
+                        public
+                    </p>
+                    <p>
+                        <input type="radio" name="pytanie1" value="if" />
+                        if
+                    </p>
+                </form>
                 </label>
             </div>
             <div class="question">
@@ -50,10 +64,25 @@
                     Pytanie 2
                 </h2>
                 <label class="q-label">
-                Uzupełnij instrukcję warunkową "jeśli":
-                </br>
-                <input class="width-2" type="text" placeholder="wpisz odpowiedź"  name="pytanie2">
-                <code>(clicks < 4){</br>&nbsp;&nbsp;&nbsp;&nbsp;...</br>&nbsp;&nbsp;&nbsp;&nbsp;...</br>}</code>
+                Jakim słowem rozpoczynamy instrukcję warunkową?
+                <form class="width-2" type="text">
+                    <p>
+                        <input type="radio" name="pytanie2" value="double" />
+                        double
+                    </p>
+                    <p>
+                        <input type="radio" name="pytanie2" value="static" />
+                        static
+                    </p>
+                    <p>
+                        <input type="radio" name="pytanie2" value="if" />
+                        if
+                    </p>
+                    <p>
+                        <input type="radio" name="pytanie2" value="tab" />
+                        tab
+                    </p>
+                </form>
                 </label>
             </div>
             <div class="question">
@@ -61,19 +90,18 @@
                     Pytanie 3
                 </h2>
                 <label class="q-label">
-                Przypisz zmiennej "x" wartość 123:</br>
-                <code>int x = 0;</code></br>
-                <input class="width-2" type="text" placeholder="wpisz odpowiedź"  name="pytanie3">
+                Pętla ma powtórzyć pewien kod 5 razy. Wstaw odpowiednią liczbę.</br>
+                <code>for(int i = 0; i < </code>
+                <input class="width-1" type="text" placeholder="wpisz odpowiedź"  name="pytanie3">
+                <code>; i++){}</code>
                 </label></div>
             <div class="question">
                 <h2>
                     Pytanie 4
                 </h2>
                 <label class="q-label">
-                Uzupełnij instrukcję warunkową "jeśli" sprawdzeniem, czy zmienna "i" jest równa 17:</br>
-                <code>if(</code>
+                Napisz linijkę rozpoczynającą metodę o nazwie "getBlock", która ma zwracać typ "Block".</br>
                 <input class="width-2" type="text" placeholder="wpisz odpowiedź"  name="pytanie4">
-                <code>){</br>&nbsp;&nbsp;&nbsp;&nbsp;...</br>&nbsp;&nbsp;&nbsp;&nbsp;...</br>}</code>
                 </label>
             </div>
             <div class="question">
@@ -81,8 +109,10 @@
                     Pytanie 5
                 </h2>
                 <label class="q-label">
-                    Co musimy wpisać przed nazwą tablicy, żeby była to tablica danych typu int?</br>
-                <input class="width-1" type="text" placeholder="wpisz"  name="pytanie5">
+                Uzupełnij warunek warutek tak, by sprawdzał, czy obie zmienne są równe.</br>
+                <code>if (x </code>
+                <input class="width-2" type="text" placeholder="wpisz"  name="pytanie5">
+                <code> y) {}</code>
                 </label>
             </div>
             <div class="question">
@@ -90,9 +120,19 @@
                     Pytanie 6
                 </h2>
                 <label class="q-label">
-                    Jak wywołać metodę, która została utworzona w podanej linii (napisz całą linijkę): </br>
-                    <code>public static void metoda(){}</code></br>
-                <input class="width-4" type="text" placeholder="wpisz odpowiedź"  name="pytanie6">
+                Zdefiniowana jest poniższa metoda:</br>
+                <code>public static void testMethod(int value){}</code></br>
+                Czy można użyć zmiennej value w kodzie tej metody?
+                <form class="width-2" type="text">
+                    <p>
+                        <input type="radio" name="pytanie6" value="tak" />
+                        tak
+                    </p>
+                    <p>
+                        <input type="radio" name="pytanie6" value="nie" />
+                        nie
+                    </p>
+                </form>
                 </label>
             </div>
             <div class="question">
@@ -100,8 +140,23 @@
                     Pytanie 7
                 </h2>
                 <label class="q-label">
-                    Jakie nawiasy oznaczają początek i koniec np. pętli, instrukcji warunkowej lub metody? Wpisz odpowiednie znaki.</br>
-                <input  class="width-1" type="text" placeholder="wpisz"  name="pytanie7">
+                Mamy przykładowy kod:</br>
+                <code>if(x == 2) {</br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;int value = 5;</br>
+                }</br>
+                value = 1;
+                </code></br>
+                Czy powyższy kod wykona się prawidłowo?
+                <form class="width-2" type="text">
+                    <p>
+                        <input type="radio" name="pytanie7" value="tak" />
+                        tak
+                    </p>
+                    <p>
+                        <input type="radio" name="pytanie7" value="nie" />
+                        nie
+                    </p>
+                </form>
                 </label>
             </div>
             <div class="question">
@@ -109,13 +164,8 @@
                     Pytanie 8
                 </h2>
                 <label class="q-label">
-                    Czy w jednej metodzie mogą być dwie zmienne o takiej samej nazwie, w przypadku, który pokazany jest poniżej? (Tak/Nie)</br>
-                    <code>public static void metoda(){</br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;int x = 5;</br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;...</br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;...</br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;int x = 2;</br>
-                    }</br></code>
+                    Ile razy powtórzy się pętla o poniższej definicji:</br>
+                    <code>for(int i = 0; i <= 10; i++){}</br></code>
                 <input class="width-1" type="text" placeholder="wpisz"  name="pytanie8">
                 </label>
             </div>
@@ -124,8 +174,25 @@
                     Pytanie 9
                 </h2>
                 <label class="q-label">
-                    Co oznacza x++? Rozpisz to jako działanie matematyczne.</br>
-                <input class="width-1" type="text" placeholder="wpisz"  name="pytanie9">
+                    Co musimy wpisać przed nazwą tablicy, żeby była to tablica danych typu double?</br>
+                    <form class="width-2" type="text">
+                        <p>
+                            <input type="radio" name="pytanie9" value="tab[]" />
+                            tab[]
+                        </p>
+                        <p>
+                            <input type="radio" name="pytanie9" value="void" />
+                            void
+                        </p>
+                        <p>
+                            <input type="radio" name="pytanie9" value="double[]" />
+                            double[]
+                        </p>
+                        <p>
+                            <input type="radio" name="pytanie9" value="double" />
+                            double
+                        </p>
+                    </form>
                 </label>
             </div>
             <div class="question">
@@ -133,8 +200,10 @@
                     Pytanie 10
                 </h2>
                 <label class="q-label">
-                    Co wpiszemy przed nazwą zmiennej, żeby stworzyć zmienną, która jest liczbą całkowitą?</br>
-                <input class="width-1" type="text" placeholder="wpisz"  name="pytanie10">
+                Mamy następującą metodę:</br>
+                <code>public static void setBlock(){}</code></br>
+                Co należy wpisać, aby wywołać tę metodę?</br>
+                <input class="width-3" type="text" placeholder="wpisz odpowiedź"  name="pytanie10">
                 </label>
             </div>
             <div class="question">
@@ -142,8 +211,25 @@
                     Pytanie 11
                 </h2>
                 <label class="q-label">
-                    Jak dodać komentarz? Wstaw odpowiedni symbol/symbole.</br>
-                <input class="width-1" type="text" placeholder="wpisz"  name="pytanie11">
+                    Który z poniższy NIE sprawi, że do zmiennej x zostanie dodana wartość 1.</br>
+                    <form class="width-2" type="text">
+                        <p>
+                            <input type="radio" name="pytanie11" value="tab[]" />
+                            x++;
+                        </p>
+                        <p>
+                            <input type="radio" name="pytanie11" value="void" />
+                            x += 1;
+                        </p>
+                        <p>
+                            <input type="radio" name="pytanie11" value="double[]" />
+                            x = x + 1;
+                        </p>
+                        <p>
+                            <input type="radio" name="pytanie11" value="double" />
+                            x + 1;
+                        </p>
+                    </form>
                 </label>
             </div>
             <div class="question">
@@ -151,8 +237,26 @@
                     Pytanie 12
                 </h2>
                 <label class="q-label">
-                    Jakie dwa słowa kluczowe musimy wpisać przed typem metody, gdy ją tworzymy?</br>
-                <input  class="width-3" type="text" placeholder="wpisz odpowiedź"  name="pytanie12">
+                    Które warunki z poniższego stwierdzenia muszą być spełnione żeby można było pograć w minecrafta?</br>
+                    <code>Mogę pograć w minecrafta, gdy <b>(warunek 1)</b> posprzątam pokój <b><i>lub</i> (warunek 2)</b> odrobię lekcje.</code>
+                <form class="width-2" type="text">
+                        <p>
+                            <input type="radio" name="pytanie12" value="warunek 1" />
+                            warunek 1
+                        </p>
+                        <p>
+                            <input type="radio" name="pytanie12" value="warunek 2" />
+                            warunek 2
+                        </p>
+                        <p>
+                            <input type="radio" name="pytanie12" value="oba warunki" />
+                            dowolny warunek
+                        </p>
+                        <p>
+                            <input type="radio" name="pytanie12" value="żaden warunek" />
+                            żaden z warunków
+                        </p>
+                    </form>
                 </label>
             </div>
             <div class="question">
@@ -160,9 +264,26 @@
                     Pytanie 13
                 </h2>
                 <label class="width-1" class="q-label">
-                    Mamy tablicę 
-                    <code>int[] tab = {4, 8, 15, 16, 23, 42};</code> Jeżeli bierzemy element tab[4] to jaką wartość otrzymamy?</br>
-                <input type="text" placeholder="wpisz odpowiedź"  name="pytanie13">
+                    Który z poniższych warunków musi zwrócić <i>prawdę</i> żeby instrukcja warukowa została wykonana przez program? 
+                    <code>if (x > 0 && z != Blocks.AIR) { ... }</code>
+                    <form class="width-4" type="text">
+                        <p>
+                            <input type="radio" name="pytanie13" value="warunek 1" />
+                            x > 0
+                        </p>
+                        <p>
+                            <input type="radio" name="pytanie13" value="warunek 2" />
+                            z != Blocks.AIR
+                        </p>
+                        <p>
+                            <input type="radio" name="pytanie13" value="oba warunki" />
+                            x > 0 lub z != Blocks.AIR
+                        </p>
+                        <p>
+                            <input type="radio" name="pytanie13" value="żaden warunek" />
+                            żaden z warunków
+                        </p>
+                    </form>
                 </label>
             </div>
             <div class="question">
@@ -170,7 +291,7 @@
                     Pytanie 14
                 </h2>
                 <label class="q-label">
-                    Uzupełnij kod, tak żeby sprawdzić czy zmienna x jest równa 20. </br>
+                    Co  </br>
                 <code>if(</code>
                 <input class="width-2" type="text" placeholder="wpisz odpowiedź"  name="pytanie14">
                 <code> 20){}</code>
