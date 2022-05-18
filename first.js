@@ -16,18 +16,15 @@ function showAnswers(link){
 }
 
 function showAnswersQ2(link){
-    copyToClipboard();
+    copyElement();
     document.getElementById("testForm").submit();
     window.location.href = '/answersQ2.html';
 }
 
-function copyToClipboard() {
-    let temp = document.createElement('textarea');
-    temp.value = copyids.ids[0].id;
-    document.body.appendChild(temp);
-    temp.select();
-    document.execCommand('copy');
-    document.body.removeChild(temp);
+function copyElement(copyFrom, whereToCopy) {
+    if(document.formName.copy.checked){
+        document.formName.elements[whereToCopy].value = copyFrom.value;
+    }
 }
 
 
